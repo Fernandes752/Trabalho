@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <style>
+        /* nessa parte implementei toda a parte do CSS, utilizei do grip para dividir minha página em colunas */
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:  #092e15;
+            font-size: x-large;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+            background-color:  #ffffff;
+        }
+        /* definições da imagem que utilizei para ser o foco da página */
+        .formal_sgt {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            text-align: center;
+            padding-top: 40px;
+        }
+        /* aqui defini como e onde iria ficar o texto, espaçamento ao redor do mesmo, texto justificado, tamanho da fonte e cor de fundo*/
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-size: medium;
+            background-color: rgb(7, 144, 73);
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #092e15;
+            color: white;
+            text-align: center;
+            font-size: large;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #505132;
+        }
+        /* nessa parte coloquei as caracteristicas dos links, espaçamento, borda e cor  de fundo, na sequência a sua posição e depois como ficar após o mouse passar por cima do link */
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #505132 1px;
+            background-color: #1cc129;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #26b24bca;
+            color: white;
+        }
+        /* aqui algumas especificações das imagens que utilizei */
+        .img {
+            border: 5px solid #000000;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            justify-content: center
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+          
+        }
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+                
+            }
+        
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- dentro do header utilizando a classe container, criei a frase texto principal em minha página, na qual seu título teve características próprias utilizando o style -->
+    <header class="container">
+        <h1 style="color: rgb(255, 255, 255); text-align: center;">Moroni Fernandes da Silveira</h1>
+        <br>
+    </header>
+    <!-- dentro do nav com a classe container e a classe menu junto de um style, adicionei os links para as demais páginas de meu trabalho, na qual se encontram "biografia", "formação", "portifólio" e "contato", todas solicitadas para a confecção deste trabalho -->
+    <nav class="container menu"; style="font-size: x-large;">
+        <ul>
+            <li><a href="biografia.html">Biografia</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Projetos</a></li>
+            <li><a href="contato.html">Fale Comigo</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="formal_sgt">
+            <img src="formal.jpg" width="13%">
+            <div class="infos">
+                <p><strong>Função:</strong> 3º Sargento</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    25/06/2001
+                </p>
+                <p><strong>Cursos Concluídos:</strong>2 (até o atual momento)</p>
+                <br><br><br>
+            </div>
+        </aside>
+
+<!-- aqui nessa parte do meu código, coloquei as definições das imagens e textos que usei para dar pequenas informações sobre algumas curiosidades sobre mim, utilizei a section com a classe principal e depois cada imagem com sua própria classe com seus critérios e definições -->
+
+        <section class=" principal">
+            <h1 style="border: solid; color: #000000; font-size: x-large;">
+                Últimos Destaques:
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="destaque.jpg">
+
+                    <div class="">
+                        <h2>Destaque de Praça</h2>
+                        <p>Destaque Entre Militares da 5º Região de Exército</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="fronteira1.jpg">
+
+                    <div class="">
+                        <h2>Fronteira Paraguai</h2>
+                        <p>Coordenando Pelotões nas Faixas de Fronteira com Paraguai</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="concurso.jpg">
+
+                    <div class="">
+                        <h2>Concurso de Ordem Unida</h2>
+                        <p>Campeão do Concurso de Ordem Unida da 14º Brigada de Infantaria Motorizada</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="fronteira2.jpg">
+
+                    <div class="">
+                        <h2>Fronteira Argentina e Uruguai</h2>
+                        <p>Protegendo a Fronteira do País com Argentina e Uruguai</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido para conhecimento sobre o militar </h1>
+    </footer>
+    </div>
+</body>
+
+</html>

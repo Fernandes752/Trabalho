@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /* nessa parte implementei toda a parte do CSS, utilizei do grip para dividir minha página em colunas */
+
+       .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:  #092e15;
+        }
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            text-align: center;
+    }
+        .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+        }
+        /* defini uma cor padronizada de fundo para todas as páginas (exceção da última) e defini o texto para ficar centralizado na página */
+        body{
+            background-color: rgb(96, 118, 96);
+            text-align: center;
+        /* aqui defini a posição da classe sgt*/
+            }
+            .sgt {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        /* nessa parte coloquei as caracteristicas dos links, espaçamento, borda e cor  de fundo, na sequência a sua posição e depois como ficar após o mouse passar por cima do link */
+            a,
+        a:link {
+            text-decoration: none;
+            color: antiquewhite;
+            padding: 8px 16px;
+            border: solid #505132 1px;
+            background-color: #092e15;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #1e8a3bca;
+            color: white;
+        }
+            ::selection {
+                color: blue;
+                background: rgb(39, 209, 45)
+            }
+        /* aqui defini o tamanho da fonte e qual tipo de borda e sua espessura */
+            p{
+                font-size: x-large;
+                border: 3px solid #000000;
+            }
+    </style>
+</head>
+<body>
+    <!-- dentro do body comecei criando o título da página e logo em seguida já deixei o botão para voltar a página inical -->
+    <header class="container">
+        <h1 style="color: antiquewhite; text-align: center;">Minha Biografia</h1>
+    </header>
+    <br><br>
+    <nav class="menu" style="font-size: x-large;">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+    <!-- aqui adicionei uma foto para dar uma "cara" para a página, além de definir sua classe, adicionei uma borda e defini seu tamanho -->
+    <div class="container wrapper">
+        <aside class="sgt">
+            <img src="chique.jpg" style="border: 5px solid #000000;" width="400px">
+        </aside>
+    </div>        
+
+    <br><br>
+   
+    <!-- aqui defini o parágrafo para descrever a biografia -->
+    <p> Me chamo Moroni Fernandes da Silveira, tenho 22 anos de idade. Nasci na cidade de Araranguá no interior do estado de Santa Catarina. Filho de Alexandre Fernandes e Cátia da Silveira, possuo uma irmã mais velha chamada Katrine Hoepers. Vivi até meus 17 anos no interior e somente após passar na Universidade Federal de Santa Catarina que me mudei para a cidade de Florianópolis.
+    Desde criança sempre tive grande interesse por jogos de vídeo-games, começando pelo fato de meus pais terem um Playstation 1 quando eu era bebê, aí já se pode perceber que fui introduzido nessa vida bem cedo. Passei por diversos consoles como Playstation 1,2 e 3, X-Box 360 e depois me introduzi para os computadores desktop. A partir disso minha rotina se baseava em estudar e jogar.
+    Em 2016 me encontrei em um novo hobby, entrei para a musculação. Era muito magro e tive grandes dificuldades no começo, porém serviram de motivação para ser cada dia melhor. Ter uma vida mais saudável me fez influenciar meus pais que posteriormente adotaram hábitos mais saudáveis em suas vidas. Hoje 7 anos depois de iniciar nessa vida, ainda possuo os mesmos hábitos, além de toda minha rotina militar auxiliar ainda mais nesse quesito.</p>
+</body>
+</html>

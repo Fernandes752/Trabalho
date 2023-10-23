@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+         /* nessa parte implementei toda a parte do CSS, utilizei do grip para dividir minha página em colunas */
+
+       .container {
+            display: grid;
+        }
+        /* defini uma cor padronizada de fundo para o header e deixei seu texto centralizado */
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:  #092e15;
+            text-align: center;
+        }
+/* texto centralizado e justificado */
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            justify-content: center;
+            text-align: center;
+    }
+        .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+ /* nessa parte coloquei as caracteristicas dos links, espaçamento, borda e cor  de fundo, na sequência a sua posição e depois como ficar após o mouse passar por cima do link */
+            a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #505132 1px;
+            background-color: #092e15;
+            color: antiquewhite;
+        }
+
+        li {
+            float: center;
+        }
+
+        a:hover {
+            background-color: #26b24bca;
+            color: white;
+        }
+/* defini uma cor padronizada de fundo para todas as páginas (exceção da última) e defini o texto para ficar centralizado na página */
+        body{
+            background-color: rgb(96, 118, 96);
+            text-align: center;
+            text-align: justify;
+            }
+/* defini as especificações da classe sgt, texto justificado, espaçamento e sua margem */
+            .sgt {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                justify-content: center;
+                padding: 5px;
+                margin: 25px;
+            }
+           
+/* quando texto for selecinado ficará na cor azul e sua cor de fundo ficará amarelo */
+            ::selection {
+                color: blue;
+                background: rgb(221, 248, 12)
+            }
+
+/* aqui defini o tamanho da fonte, borda, espaçamento e margem dos parágrafos */
+            p{
+                font-size: x-large;
+                border: 3px solid #000000;
+                padding: 10px; /* Adicionei um preenchimento para espaçamento interno */
+                margin: 20px 0; /* Adicionei margens para espaçamento externo (20px na parte superior e inferior) */
+            }
+    </style>
+</head>
+<body>
+
+    <!-- dentro do body comecei criando o título da página e logo em seguida já deixei o botão para voltar a página inical -->
+
+    <header class="container">
+    <h1 style="color: antiquewhite;" class="titulo">Minha Formação</h1>
+    </header>
+    <br><br>
+    <div class="menu" style="display: grid;">
+    <nav style="font-size: x-large;">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
+    </div>
+    <br><br>
+
+ <!-- comecei adicionando 3 fotos para dar destaque na formação, coloquei bordas em todas e defini sua altura e largura -->
+    <div class="container wrapper">
+        <aside class="sgt">
+            <img src="guarda.jpg" style="border: 5px solid #000000" height="400px" width="30%">
+            <img src="glo.jpg" style="border: 5px solid #000000" height="400px" width="30%">
+            <img src="formatura.jpg" style="border: 5px solid #000000" height="400px" width="30%">
+    <br><br>
+<!-- aqui escrevi os parágrafos ontem foram contados tudo sobre minha formação, ainda adicionei negrito para destacar algumas palavras do texto -->
+
+    <p> Realizei praticamente todos os anos da minha fase escolar na mesma instituição, na cidade de Araranguá-SC em uma escola chamada "Xodó da Tia Joyce" onde estudei até minha 5º série. A partir dessa série até minha graduação no Ensino Médio (2018) estudei na escola "Extensão X", também na cidade de Araranguá-SC. Após isso ingressei na <strong> Universidade Federal de Santa Catarina (UFSC)</strong> para o curso de Física-Bacharel no ano de 2019 e simultaneamente comecei a estudar Banco de Dados na <strong>Universidade Cruzeiro do Sul.</strong>
+    </p>
+    <p> No ano seguinte me alistei e entrei para o <strong>Exército Brasileiro</strong>, um ambiente novo, diferente e hostil. Junto da pandemia do Covid-19 o ano de 2020 foi cheio de novas adaptações, além de ser um ano totalmente atípico devido aos isolamentos mantive trabalhando e me qualificando dentro das forças armadas. No ano seguinte, 2021, realizei o <strong>Curso de Formação de Cabos (CFC)</strong> no qual consegui uma boa colocação. Na sequência fui convocado para realizar algumas missões pelo Exército Brasileiro foram elas: <strong>Operação COVID-19, Operação na Faixa de Fronteira</strong> nos anos de 2021 e 2022, <strong>Operação Ágata - Fronteira Sul</strong> em 2021, <strong>Exercícios de Ajuda Humanitária</strong> em 2021. Realizei a <strong>Segurança Presidencial</strong> em 2021, <strong>Exercício de Simulação Viva</strong> para Certificação da 15ª Bda Inf Mec no ano de 2022 e <strong>Missão de Garantia da Votação e Apuração GVA nas Eleições</strong> de 2022.
+    </p>
+    <p> Além disso, no ano de 2022 realizei o <strong>Curso de Formação de Sargentos Temporários (CFST)</strong>, onde fui promovido a <strong>3º Sargento</strong> no mesmo ano. A partir dessa realização comecei a focar em minha vida civil, de modo que decidi aprender a programar e desbloquear essa nova habilidade. Hoje em 2023 estou indo para meus 4 anos de Exército, estou realizando a graduação de <strong>Análise e Desenvolvimento de Sistemas</strong> e tenho diversos planos para o futuro dentro da área da Tecnologia da Informação, onde pretendo seguir na área de CyberSegurança.
+    </p>
+</body>
+</html>

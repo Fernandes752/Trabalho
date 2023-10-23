@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-me</title>
+<style>
+     /* nessa parte implementei toda a parte do CSS, utilizei do grip para dividir minha página em colunas */
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        text-align: center;
+        padding: 0;
+    }
+    header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:  #092e15;
+        }
+    .menu {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            text-align: center;
+    }
+    /* nessa parte coloquei as caracteristicas dos links, espaçamento, borda e cor  de fundo, na sequência a sua posição e depois como ficar após o mouse passar por cima do link */
+    a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #505132 1px;
+            background-color: #092e15;
+            color: antiquewhite;
+        }
+        ul{
+            text-align: center;
+        }
+        
+        a:hover {
+            background-color: #1e7f38ca;
+            color: white;
+        }
+    /* nessa parte do body, eu quis colocar uma imagem de fundo, para representar bem a infantaria, que é minha qualificação dentro das forças armadas */
+    body{
+        margin: 0 auto;
+        background: url(bandeirao.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    .container {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Isso faz com que a div ocupe toda a altura da tela. */
+            background: rgba(0, 0, 0, 0.5); /* Adicione um fundo escuro transparente para destacar o formulário. */
+    }   
+    }
+    /* aqui coloquei tamanho e cor da fonte e a cor de fundo */
+    .titulo{
+        font-size: 4rem;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
+</style>
+    
+<!-- dentro do body comecei criando o título da página e logo em seguida já deixei o botão para voltar a página inical -->
+<body>
+    <h1 class="titulo">Seja Bem vindo, nesta página você terá as instruções para poder me contatar. Para entrar em contato comigo, preencha os dados a seguir:</h1>
+    <br><br>
+    <div>
+        <nav class="menu"; style="font-size: x-large;">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+        </nav>
+    </div>
+     <!-- nesse parte criei o formulário onde serão inseridas as informações para entrar em contato comigo, são elas: nome, e-mail e uma mensagem -->
+    <div class="container">
+    <form action="" method="">
+    <table>
+    <tr>
+    <th><label for="nome" style="color: aliceblue;">Nome:</label></th>
+    <td><input type="text" name="nome" placeholder="Digite seu Nome" size="70" maxlength="80"
+   id="nome"></td>
+    </tr>
+    <tr>
+    <th><label for="email" style="color: aliceblue;" >E-mail:</label></th>
+    <td><input type="email" name="email" placeholder="Digite seu E-mail" size="70" maxlength="80"
+   id="email"></td>
+    </tr>
+    <tr>
+    <th><label for="msg" style="color: aliceblue;">Mensagem:</label></th>
+    <td><textarea name="msg" rows="10" cols="69" placeholder= "Digite sua Mensagem"></textarea></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td> <button>Enviar</button></td> 
+    </tr>
+    </table>
+    </form>
+    </div>
+   </body>
+   </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projetos</title>
+    <style>
+
+         /* nessa parte implementei toda a parte do CSS, utilizei do grip para dividir minha página em colunas */
+
+        .container {
+             display: grid;
+         }
+ 
+         header {
+             grid-column-start: 1;
+             grid-column-end: 12;
+             background-color:  #092e15;
+         }
+         .menu {
+             grid-column-start: 6;
+             grid-column-end: 8;
+             justify-items: center;
+             margin-bottom: 20px;
+     }
+         .wrapper {
+                 grid-column-start: 1;
+                 grid-column-end: 1;
+         }
+
+ /* defini uma cor padronizada de fundo para todas as páginas (exceção da última) e defini o texto para ficar centralizado na página */
+
+         body{
+             background-color: rgb(96, 118, 96);
+             text-align: center;
+ 
+             }
+ /* aqui defini a posição da classe sgt*/
+
+             .sgt {
+                 grid-column-start: 1;
+                 grid-column-end: 1;
+                 text-align: center;
+             }
+/* nessa parte coloquei as caracteristicas dos links, espaçamento, borda e cor  de fundo, na sequência a sua posição e depois como ficar após o mouse passar por cima do link */
+             a,
+         a:link {
+             text-decoration: none;
+             color: antiquewhite;
+             padding: 8px 16px;
+             border: solid #505132 1px;
+             background-color: #092e15;
+         }
+ 
+         li {
+            text-align: center;
+         }
+ 
+         a:hover {
+             background-color: #1e8a3bca;
+             color: white;
+         }
+             ::selection {
+                 color: blue;
+                 background: rgb(39, 209, 45)
+             }
+/* aqui defini o tamanho da fonte e qual tipo de borda e sua espessura */
+             p{
+                 font-size: x-large;
+                 border: 3px solid #000000;
+             }
+/* aqui defini como seria distribuida e a posição dessa classe card */
+             .card {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+            }
+/* aqui defini as espeficações das imagens que utilizei, suas bordas, seu contorno, tamanhos e larguras */
+            .img {
+            border: 5px solid #000000;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            margin: 0 auto;
+        }
+
+        .img img {
+            width: 200px;
+            height: 115px;
+          
+        }
+            .img {
+                max-width: 45rem;
+                margin: 5rem;
+                
+            }
+</style>
+</head>
+<body>
+
+<!-- dentro do body comecei criando o título da página e logo em seguida já deixei o botão para voltar a página inical -->
+
+    <header class="container">
+        <h1 style="color: antiquewhite; text-align: center;">Meus Projetos</h1>
+    </header>
+    <br><br>
+    <nav class="menu" style="font-size: x-large;">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+<!-- aqui defini um sub-titulo onde defini seu tamanho de fonte e seu alinhamento, na sequência adicionei os links para os trabalhos que desenvolvi, sendo ambos documentos em PDF -->
+
+    <h1 style="font-size: x-large; text-align: center;">A seguir estão alguns dos projetos que desenvolvi:</h1>
+    <br><br>
+    <nav class="container menu" style="font-size: x-large;">
+        <ul>
+            <li><a href="ExploracaoGlobal.pdf">Trabalho de Fundamentos de Design de Sistemas</a></li>
+            <br>
+            <li><a href="BancoDeDadosRelacional.pdf">Trabalho de Banco de Dados Relacional</a></li>
+        </ul>
+    </nav>
+<!-- nessa parte utilizei a classe card e adicionei uma foto de cada trabalho com uma breve descrição -->
+    <div class="card">
+                <div class="img">
+                    <img src="aplicativo.JPG">
+
+                    <div class="">
+                        <h2>Aplicativo de Turismo</h2>
+                        <p>Aplicativo celular feito para auxiliar no Turismo pelo Brasil</p>
+
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="TrabalhoBancoDeDados.jpg">
+
+                    <div class="">
+                        <h2>Modelagem de Banco de Dados</h2>
+                        <p>Modelagem dos dados de uma Empresa Aérea</p>
+                    </div>
+                </div>
+    </div>
+
+</body>
+</html>
